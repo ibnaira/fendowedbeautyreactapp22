@@ -1,0 +1,182 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+
+/* html {
+  font-size: 67%;
+} */
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(ananda-black-font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont2";
+  src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont3";
+  src: url(Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont4";
+  src: url(Roboto/Roboto-VariableFont_wdth\wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont5";
+  src: url(Roboto/Roboto-Italic-VariableFont_wdth\wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+#top-text {
+  margin: auto;
+  text-align: center;
+  width: 40%;
+  font-size: 3rem;
+}
+.top-most-section {
+  width: 90%;
+  height: 40rem;
+  margin: auto;
+  display: flex;
+  gap: 1rem;
+  background-image: url(images/gym-images/gym-img-1.png);
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.box {
+  width: 20%;
+  padding: 1rem;
+  height: 5rem;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.schedule-section {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  background-color: var(--light-gray);
+}
+
+.part-01 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.part-01-big-text {
+  font-size: 2.5rem;
+}
+.part-01-md-text {
+  font-size: 1.5rem;
+}
+
+.part-01-sm-text {
+  font-size: 1rem;
+}
+
+.part-02 {
+  line-height: 2;
+  height: 30rem;
+  overflow-y: scroll;
+}
+
+.part-01 > div {
+  background-color: white;
+  border-radius: 2rem;
+  height: 10rem;
+  padding: 1rem;
+  width: max-content;
+}
+
+.our-coach {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  gap: 2rem;
+  height: 20rem;
+  /* margin-top: 2rem; */
+}
+.coach-box {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: greenyellow;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.coach-img {
+  height: 90%;
+  width: 100%;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.coach-img-1 {
+  background-image: url(images/gym-images/coach001.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}
+
+.coach-img-2 {
+  background-image: url(images/gym-images/coach002.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}
+
+.coach-img-3 {
+  background-image: url(images/gym-images/coach003.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+}

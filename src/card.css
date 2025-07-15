@@ -1,0 +1,76 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+
+.card {
+  padding: 0.5rem;
+  background-color: var(--secondary);
+  height: 35rem;
+  width: 90%;
+  box-shadow: 0 0.3px 0.2px rgba(173, 172, 172, 0.082);
+  color: var(--text);
+  transition: all 0.5s ease-out;
+  perspective: 10000;
+  z-index: 1000;
+  margin: auto;
+}
+
+.cards {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  background-color: var(--secondary);
+
+  transition: transform 0.8s;
+  box-shadow: 0 0.1rem 0.5rem rgba(75, 11, 75, 0.144);
+}
+
+.card:hover .cards {
+  transform: rotateY(180deg);
+  /* transform: scale(1.1, 1.1); */
+  box-shadow: 0 0.1rem 5rem rgba(75, 11, 20, 0.144);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: white;
+}
+
+.card-front {
+  background-color: var(--primary);
+  font-size: 1em;
+  /* height: 100%;
+  width: 100%; */
+}
+.big-text {
+  font-size: 2em;
+}
+
+.card-back {
+  background-color: var(--background);
+  transform: rotateY(180deg);
+  line-height: 3rem;
+}

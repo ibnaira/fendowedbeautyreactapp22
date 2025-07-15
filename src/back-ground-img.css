@@ -1,0 +1,233 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+
+.main-heading {
+  background-image: url(images/young-african-american-man-visiting-barbershop.jpg);
+  background-size: 30% auto;
+
+  color: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #3333331a;
+}
+
+.carousel-1 {
+  /* position: ; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623), #ffffffad),
+    url(images/spa-composition-with-body-care-items-light.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--secondary);
+}
+
+.carousel-2 {
+  /* position: ; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.623), #ffffffad),
+    url(images/spa-composition-with-body-care-items-light.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--secondary);
+  /* text-align: center; */
+}
+
+.box--2-mini {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.171), var(--secondary)),
+    url(images/close-up-therapist-hand-massaging-woman-s-back-with-hot-towel-spa.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--secondary);
+  /* position: relative; */
+  width: 100%;
+  height: 40rem;
+  /* border-top-right-radius: 57rem; */
+}
+
+.box--3-mini {
+  background-image: url(images/close-up-manicurist-using-nail-polish.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20rem;
+  /* border-radius:3rem; */
+}
+
+.materials-img {
+  max-height: 40rem;
+  width: 50%;
+  background-image: url(images/beauty-materials.png);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* clip-path: ellipse(66% 56% at 71% 50%); */
+}
+
+.image-1 {
+  background-image: url(images/perfume-candle.webp);
+  height: 30rem;
+  width: 40%;
+  border-radius: 50%;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate(8rem, 6rem);
+  z-index: 1000;
+  border-left: 1rem solid #be7f50;
+  border-bottom: 1rem solid #be7f50;
+}
+
+.image-2 {
+  background-image: url(images/woman-cleansing-face.webp);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* position: absolute; */
+  transform: translate(5rem, 2rem);
+  border-right: 1rem solid #ecd9c1;
+  border-bottom: 1rem solid #ecd9c1;
+  z-index: 2;
+  width: 50%;
+}
+
+.image-3 {
+  background-image: url(images/bath-tub.webp);
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 65%;
+  /* border-radius: 40%; */
+  text-align: center;
+}
+
+.image--1 {
+  background-image: url(images/masseur-taking-care-her-client.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35rem;
+  width: 25%;
+  border-radius: 100px / 50px;
+}
+
+.image--2 {
+  background-image: url(images/close-up-therapist-hand-massaging-woman-s-back-with-hot-towel-spa.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35rem;
+  width: 25%;
+
+  border-radius: 100px / 50px;
+  transform: translateY(5rem);
+}
+
+.image--3 {
+  background-image: url(images/masseur-taking-care-her-client.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35rem;
+  width: 25%;
+
+  border-radius: 100px / 50px;
+}
+
+.image--4 {
+  background-image: url(images/beautiful-women-doing-facial-treatment-home.png);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 35rem;
+  width: 25%;
+  border-radius: 100px / 50px;
+  transform: translateY(5rem);
+}
+
+/* /services */
+
+.zoom-mode {
+  background-size: 100% 100%;
+  transition: 0.5s all;
+  perspective: 1000;
+  object-fit: cover;
+}
+
+.max-zoom-mode {
+  background-size: 150% 140%;
+  transition: 0.9s all;
+  perspective: 1000;
+}
+/* .service-card--1 {
+  background-image: url(images/man-barbershop-salon-doing-haircut-beard-trim.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: grey;
+}
+.service-card--2 {
+  background-image: url(images/beautiful-women-doing-facial-treatment-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: black;
+}
+.service-card--3 {
+  background-image: url(images/portrait-beautiful-african-woman-with-towel-head-smiling-resting-spa-salon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--lavender);
+}
+.service-card--4 {
+  background-image: url(images/beautiful-women-doing-facial-treatment-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--lavender);
+}
+.service-card--5 {
+  background-image: url(images/woman-training-weightlifting-gym.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--lavender);
+}
+.service-card--6 {
+  background-image: url(images/woman-cleansing-face.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--lavender);
+}
+.service-card--7 {
+  background-image: url(images/handsome-black-man-is-engaged-gym.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--lavender);
+}
+.service-card--8 {
+  background-image: url(images/man-woman-doing-beauty-treatment-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-color: var(--lavender);
+} */

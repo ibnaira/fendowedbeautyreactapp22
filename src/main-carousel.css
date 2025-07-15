@@ -1,0 +1,108 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.main {
+  width: 100%;
+  /* background-color: yellow; */
+  padding: none;
+  height: 90vh;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+  position: relative;
+  clip-path: ellipse(80% 60% at 50% 40%);
+  /* background-color: purple; */
+}
+
+/* Customize Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 3rem;
+  border-radius: 50%;
+  transform: translateY(-90%);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Customize Swiper pagination dots */
+.swiper-pagination-bullet {
+  background-color: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff;
+}
+
+/* Texts in carousel */
+
+.carousel-text-main-box {
+  margin: auto;
+  z-index: 10000;
+  transform: translate(40%, 30%);
+  height: 30%;
+  color: black;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Text overlay */
+.slide-text {
+  position: absolute;
+  bottom: 80%;
+  left: 30px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  max-width: 70%;
+  background: rgba(0, 0, 0, 0.3); /* optional: semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* Responsive text */
+/* @media (max-width: 768px) {
+  .slide-text {
+    bottom: 15px;
+    left: 15px;
+    max-width: 90%;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+} */

@@ -1,0 +1,188 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #213a08;
+  --lavender: #e6e6fa;
+  --light-gray: #f2f2f2;
+  --accent-peach: rgba(56, 4, 56, 0.582);
+}
+.texts {
+  transform: translate(-5%, 110%);
+  bottom: 48rem;
+  position: absolute;
+  font-style: normal;
+  margin: auto;
+  width: 60rem;
+}
+
+.texts::before {
+  content: "beauty";
+  position: absolute;
+  top: -7rem;
+  left: -15rem;
+  letter-spacing: 4rem;
+  font-size: 26rem;
+  font-family: inherit;
+  color: var(--text);
+  z-index: -100;
+  opacity: 0.23;
+  text-align: center;
+}
+
+.carousel-1 .small-text {
+  font-size: 1.3rem;
+  color: var(--background);
+  display: block;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.carousel-1 .big-text {
+  font-size: 6.4rem;
+  color: var(--background);
+}
+
+.carousel-2 .small-text {
+  font-size: 2rem;
+  color: var(--lavender);
+  display: block;
+  letter-spacing: 0.3rem;
+  line-height: 1.3em;
+  /* font-weight: 800; */
+}
+
+.carousel-2 .big-text {
+  font-size: 6.4rem;
+  color: var(--lavender);
+  text-align: center;
+}
+
+.big-text {
+  font-size: 2rem;
+}
+
+.img-section--1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.massage-box-text-1 {
+  margin-block-end: 5rem;
+  margin-block-start: 5rem;
+}
+
+.top-text {
+  font-size: 20px;
+  /* letter-spacing: 0.5rem; */
+  word-spacing: 5px;
+  text-align: center;
+  width: 40rem;
+  margin: auto;
+}
+
+.box--1-text-1 {
+  font-weight: normal;
+}
+
+.top-text-1 {
+  word-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  color: var(--secondary);
+  font-family: cursive;
+}
+
+.section-3--text-box {
+  width: 30rem;
+  margin: auto;
+}
+
+.section-3--text {
+  font-weight: normal;
+  line-height: 2rem;
+  /* letter-spacing: 4px; */
+  word-spacing: 10px;
+}
+
+.box--2-text-box {
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.box--2-text {
+  color: var(--text);
+}
+
+.box--3-text-box {
+  text-align: left;
+  margin: auto;
+  width: 30rem;
+  /* padding: 0.5rem; */
+}
+
+.box--3-text {
+  line-height: 40px;
+}
+
+.section-3-box-3-text {
+  width: 30rem;
+  margin: auto;
+  text-align: left;
+  line-height: 40px;
+  z-index: 40;
+}
+
+.part--1 .big-text {
+  font-size: 3rem;
+}
+.part--1 .small-text {
+  font-size: 1.3rem;
+}
+
+.contact-text {
+  display: flex;
+  gap: 2rem;
+  margin-block: 2em;
+  font-size: 1.2em;
+}
+
+.figure .text {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.icons a {
+  transition: all 0.4s;
+}
+
+.icons a svg {
+  margin: auto;
+}
+
+.icons a:hover {
+  box-shadow: 0 0.2rem 0.8rem black;
+  padding: 0.2em;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: center;
+}
+
+.footer-top-txt {
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.home-title {
+  text-decoration: none;
+}

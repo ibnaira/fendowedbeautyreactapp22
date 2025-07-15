@@ -1,0 +1,32 @@
+@media (max-width: 460px) {
+  .gym-main-section-1 {
+    width: 100%;
+    border-radius: 0;
+  }
+  .gym-part--2 {
+    flex-direction: column;
+  }
+  .gym-part--2-img p {
+    position: relative;
+    top: 50%;
+    padding: 1rem;
+  }
+  .icon-text {
+    color: white;
+  }
+  .gym-part--2-img {
+    width: 100%;
+  }
+  .gym-section--3 {
+    flex-direction: column;
+  }
+  .gym-part---1 {
+    width: 100%;
+  }
+  .gym-part---2 {
+    width: 100%;
+  }
+  .pricing-cards {
+    flex-direction: column;
+  }
+}

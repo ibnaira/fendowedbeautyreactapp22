@@ -1,0 +1,90 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+.btn {
+  color: var(--lavender);
+  background-color: var(--text);
+  padding: 1rem;
+}
+.btn-show-details {
+  background-color: var(--text);
+  border: 2px solid var(--primary);
+  display: block;
+  padding: 5px;
+  font-size: 1rem;
+  margin-block: 1rem;
+}
+
+.btn-show-details:hover {
+  background-color: var(--text);
+}
+
+.btn-learn-more {
+  color: var(--lavender);
+  background-color: var(--text);
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  text-align: center;
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-learn-more:hover {
+  background-color: var(--lavender);
+  color: var(--text);
+}
+
+.carousel-box .btn-learn-more {
+  transform: translate(40rem, 40rem);
+  margin: auto;
+}
+
+.btn-book-now {
+  padding: 5px;
+  background-color: var(--text);
+  color: var(--lavender);
+  height: 4rem;
+  width: 10rem;
+  margin-top: 3rem;
+}
+.btn-book-now:hover {
+  background-color: var(--lavender);
+  color: var(--text);
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(128, 0, 128, 0.301);
+  border: none;
+}
+
+.btn-submit {
+  width: 40%;
+  background-color: var(--primary);
+  border: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(3, 3, 3, 0.438);
+  cursor: pointer;
+  margin: auto;
+}
+
+.btn-read-more {
+  background-color: white;
+  /* padding: 1rem 2rem; */
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-read-more:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}

@@ -1,0 +1,249 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(ananda-black-font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont2";
+  src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont3";
+  src: url(Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont4";
+  src: url(Roboto/Roboto-VariableFont_wdth\wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont5";
+  src: url(Roboto/Roboto-VariableFont_wdthwght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.texts {
+  position: absolute;
+  font-style: normal;
+  margin: auto;
+  font-family: "MyCustomFont";
+  width: 40rem;
+  transform: translate(50%, 50%);
+}
+/* 
+.texts::before {
+  content: "beauty";
+  position: absolute;
+  top: -7rem;
+  left: -15rem;
+  letter-spacing: 4rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: var(--text);
+  z-index: -100;
+  opacity: 0.23;
+  text-align: center;
+} */
+
+.carousel-1 .small-text {
+  font-size: 2rem;
+  color: var(--text);
+  display: block;
+  color: var(--text);
+  font-family: "MyCustomFont2";
+  font-weight: 500;
+}
+
+.carousel-1 .big-text {
+  font-size: 4rem;
+  color: var(--text);
+  font-family: "MyCustomFont2";
+  font-weight: 800;
+}
+
+.carousel-2 .small-text {
+  font-size: 2rem;
+  color: var(--text);
+  display: block;
+  font-family: "MyCustomFont2";
+
+  /* font-weight: 800; */
+}
+
+.carousel-2 .big-text {
+  font-size: 4rem;
+  color: var(--text);
+  font-family: "MyCustomFont2";
+  font-weight: 800;
+}
+
+.big-text {
+  font-size: 1rem;
+  font-family: "MyCustomFont5";
+}
+.card-text-box > .small-text {
+  color: var(--text);
+}
+
+.img-section--1 {
+  display: flex;
+  gap: 2rem;
+}
+
+.massage-box-text-1 {
+  margin-block: 5rem;
+  /* margin-block-start: 5rem; */
+  width: 100%;
+  font-size: 2rem;
+  font-family: "MyCustomFont4";
+}
+
+.top-text {
+  font-size: 20px;
+  /* letter-spacing: 0.5rem; */
+  word-spacing: 5px;
+  text-align: center;
+  width: 40rem;
+  margin: auto;
+}
+
+.box--1-text-1 {
+  font-weight: normal;
+  font-family: "MyCustomFont3";
+}
+
+.top-text-1 {
+  word-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+  color: var(--secondary);
+  font-family: "MyCustomFont3";
+}
+
+.section-3--text-box {
+  width: 40%;
+  margin: auto;
+}
+
+.section-3--text {
+  line-height: 2rem;
+
+  font-size: 1.4rem;
+  /* letter-spacing: 4px; */
+  /* word-spacing: 10px; */
+}
+
+.section-3--text {
+  font-family: "MyCustomFont3";
+  font-weight: 300;
+}
+.section-3--main-text {
+  font-family: "MyCustomFont3";
+  font-weight: 300;
+}
+.box--2-text-box {
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.box--2-text {
+  color: var(--text);
+}
+
+.box--3-text-box {
+  text-align: left;
+  margin: auto;
+  width: 30rem;
+  /* height: 50%; */
+}
+
+.box--3-text {
+  line-height: 40px;
+  font-weight: normal;
+  font-family: "MyCustomFont3";
+}
+
+.section-3-box-3-text {
+  width: 30rem;
+  margin: auto;
+  text-align: left;
+  line-height: 40px;
+  z-index: 40;
+  font-family: "MyCustomFont5";
+  font-size: normal;
+  font-weight: normal;
+}
+
+.part--1 .big-text {
+  font-size: 3rem;
+}
+.part--1 .small-text {
+  font-size: 1.3rem;
+}
+
+.contact-text {
+  display: flex;
+  gap: 2rem;
+  margin-block: 2em;
+  font-size: 1.2em;
+}
+
+.figure .text {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1rem;
+}
+
+.icons a {
+  transition: all 0.4s;
+}
+
+.icons a svg {
+  margin: auto;
+}
+
+.icons a:hover {
+  box-shadow: 0 0.2rem 0.8rem black;
+  padding: 0.2em;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: center;
+}
+
+.footer-top-txt {
+  font-weight: 800;
+  margin: 1rem;
+}
+
+.home-title {
+  text-decoration: none;
+}

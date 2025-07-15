@@ -1,0 +1,56 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+
+#nav-bar--container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: rgb(247, 247, 247);
+  /* width: 100%; */
+  margin-bottom: 3rem;
+  z-index: 100;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 2rem;
+}
+.nav-bar a {
+  /* margin: 0 1rem; */
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-bar a:hover::after {
+  width: 100%;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.home-title {
+  text-decoration: none;
+}

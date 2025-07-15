@@ -1,0 +1,309 @@
+gym-:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(ananda-black-font/AnandaBlackPersonalUseRegular-rg9Rx.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont2";
+  src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont3";
+  src: url(Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont4";
+  src: url(Roboto/Roboto-VariableFont_wdth\wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyCustomFont5";
+  src: url(Roboto/Roboto-Italic-VariableFont_wdth\wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+.gym-main-section-1 {
+  margin: auto;
+  height: 75vh;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  background-image: url(images/gym-images/classes-top-image.png);
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-blend-mode: luminosity;
+  background-color: rgba(21, 21, 22, 0.342);
+  width: 80%;
+  color: white;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.home-title {
+  display: flex;
+}
+
+.gym-logo > img {
+  height: 3rem;
+}
+
+.gym-section--1 {
+  margin: auto;
+  width: 80%;
+  padding: 2rem;
+}
+
+.main-text {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-family: "MyCustomFont2";
+  font-size: 3rem;
+}
+
+.small-text {
+  text-align: center;
+  width: 70%;
+  color: var(--text);
+  margin: auto;
+  font-family: "MyCustomFont2";
+}
+.gym-btn-join-now {
+  width: 9rem !important;
+  margin: auto;
+  padding: 1rem 1rem;
+  border-radius: 3rem;
+  background-color: var(--text);
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.gym-section--2 {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+  margin-block-start: 3rem;
+  background-color: rgba(97, 94, 94, 0.034);
+}
+
+.big-text-2 {
+  font-size: 2.4rem;
+}
+
+.gym-btn-more-class {
+  /* width: 7rem; */
+  height: 60px;
+  border-radius: 3rem;
+  color: var(--lavender);
+  background-color: var(--text);
+  border: none;
+  padding: 1rem;
+}
+.gym-part--1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  /* margin: 1rem; */
+  /* border: 2px solid black; */
+}
+
+.gym-part--2-box {
+  padding: 3rem;
+}
+
+.gym-part--2 {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  /* border: 2px solid black; */
+  padding: 1rem;
+}
+
+.gym-image-1 {
+  background-image: url(images/personal-training.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: auto;
+}
+.gym-image-2 {
+  background-image: url(images/personal-training.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+.gym-image-3 {
+  background-image: url(images/personal-training.png);
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.gym-part--2-img {
+  width: 30%;
+  height: 35rem;
+  font-size: clamp(1.5rem, 1.3vw, 2rem);
+  color: var(--lavender);
+
+  /* align-items: baseline; */
+  /* padding: 2rem; */
+}
+
+.part--2-img-links {
+  width: 100%;
+  height: 100%;
+}
+
+.part--2-img:hover {
+  color: blue;
+}
+
+.gym-part--2-img p {
+  position: relative;
+  top: 70%;
+  padding: 1rem;
+}
+
+.gym-section--3 {
+  display: flex;
+  margin: auto;
+  margin-block: 3rem;
+  width: 80%;
+  justify-content: space-between;
+  background-color: var(--light-gray);
+  padding: 2rem;
+}
+
+.gym-part---1 {
+  padding: 1rem;
+  width: 40%;
+}
+
+.gym-features-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.gym-btn-get-to-know-us {
+  border-radius: 3rem;
+  color: var(--lavender);
+  background-color: var(--text);
+  padding: 1rem;
+}
+
+.gym-part---2 {
+  background-image: url(images/woman-arching.png);
+  background-size: 100% 1005;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 20rem;
+  /* border: 2px solid black; */
+  margin: auto;
+}
+
+.pricing-cards {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  gap: 1rem;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.pricing-card {
+  padding: 1rem;
+  background-color: lavender;
+}
+.price {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.pricing-card-text {
+  width: 50%;
+  margin: auto;
+}
+.btn-get-started {
+  border-radius: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  margin: 1rem;
+}
+.btn-get-started:hover {
+  background-color: yellow;
+}
+
+.duration-plan {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.our-facilities {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  gap: 3rem;
+}
+
+.mark-sign {
+  background: yellow;
+  border-radius: 50%;
+}
+.icon-text {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.sticky {
+  position: fixed;
+}
