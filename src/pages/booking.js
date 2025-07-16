@@ -6,10 +6,10 @@ import { Footer } from "../App";
 function Booking() {
   return (
     <>
-      <Navbar />;
-      <BookingSectionOne />;
-      <BookingSectionTwo />;
-      <BookingLogoBox />;
+      <Navbar />
+      <BookingSectionOne />
+      <BookingSectionTwo />
+      <BookingLogoBox />
       <Footer />
     </>
   );

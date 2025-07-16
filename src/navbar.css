@@ -15,6 +15,7 @@
 #nav-bar--container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   padding: 2rem;
   background-color: rgb(247, 247, 247);
   /* width: 100%; */

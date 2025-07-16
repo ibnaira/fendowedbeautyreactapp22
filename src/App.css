@@ -24,6 +24,13 @@ body {
   box-sizing: border-box;
   color: var(--text);
 }
+
+.App {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
 /* 
 @font-face {
   font-family: "MyCustomFont";

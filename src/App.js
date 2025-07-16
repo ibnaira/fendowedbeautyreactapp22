@@ -5,6 +5,7 @@ import "./back-ground-img.css";
 import "./buttons.css";
 import "./home-mediaqueries.css";
 import "./texts.css";
+
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Services from "./pages/services.js";
@@ -51,47 +52,47 @@ function MainApp() {
   );
 }
 
-function CarouselBox() {
-  return (
-    <div className="carousel-box">
-      {/* <div className="slide carousel-1">
-      <div className="texts">
-        <span className="big-text">
-          Rediscover your inner <br />
-          peace and radiance
-        </span>
-        <span className="small-text">
-          From soothing massages and rejuvenating facials to luxurious body
-          treatments, our skilled therapists are dedicated to creating a
-          personalized experience tailored to your unique needs.
-        </span>
-      </div>
-    </div> */}
+// function CarouselBox() {
+//   return (
+//     <div className="carousel-box">
+//       {/* <div className="slide carousel-1">
+//       <div className="texts">
+//         <span className="big-text">
+//           Rediscover your inner <br />
+//           peace and radiance
+//         </span>
+//         <span className="small-text">
+//           From soothing massages and rejuvenating facials to luxurious body
+//           treatments, our skilled therapists are dedicated to creating a
+//           personalized experience tailored to your unique needs.
+//         </span>
+//       </div>
+//     </div> */}
 
-      <div className="slide carousel-2">
-        <div className="texts">
-          <span className="big-text">
-            Nestled in the heart of <br />
-            serene landscapes <br />
-          </span>
-          <span className="small-text">
-            <span className="clr-white">From</span> soothing massages and
-            rejuvenating facials to luxurious body treatments, our skilled
-            therapists are dedicated to creating a personalized experience
-            tailored to your unique needs.
-          </span>
-        </div>
-      </div>
+//       <div className="slide carousel-2">
+//         <div className="texts">
+//           <span className="big-text">
+//             Nestled in the heart of <br />
+//             serene landscapes <br />
+//           </span>
+//           <span className="small-text">
+//             <span className="clr-white">From</span> soothing massages and
+//             rejuvenating facials to luxurious body treatments, our skilled
+//             therapists are dedicated to creating a personalized experience
+//             tailored to your unique needs.
+//           </span>
+//         </div>
+//       </div>
 
-      <div className="btn-box">
-        <button className="slider__btn slider__btn--left">&larr;</button>
-        <button className="slider__btn slider__btn--right">&rarr;</button>
-      </div>
+//       <div className="btn-box">
+//         <button className="slider__btn slider__btn--left">&larr;</button>
+//         <button className="slider__btn slider__btn--right">&rarr;</button>
+//       </div>
 
-      <button className="btn btn-learn-more">Learn More &rarr;</button>
-    </div>
-  );
-}
+//       <button className="btn btn-learn-more">Learn More &rarr;</button>
+//     </div>
+//   );
+// }
 
 function WhatWeDoSection() {
   return (

@@ -40,7 +40,7 @@ function SectionTwo() {
     <section id="service-cards-box">
       <div className="service-cards">
         <div className="service-card service-card--1 zoom-mode">
-          <img src={serviceImage1} />
+          <img src={serviceImage1} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Rejuvenation Ritual</p>
@@ -54,7 +54,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--2 zoom-mode">
-          <img src={serviceImage2} />
+          <img src={serviceImage2} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Serene Scalp Renewal</p>
@@ -68,7 +68,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--3 zoom-mode">
-          <img src={serviceImage3} />
+          <img src={serviceImage3} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Himalayan Salt Stone Detox</p>
@@ -82,7 +82,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--4 zoom-mode">
-          <img src={serviceImage4} />
+          <img src={serviceImage4} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Aromatherapy Escape</p>
@@ -96,7 +96,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--5 zoom-mode">
-          <img src={serviceImage5} />
+          <img src={serviceImage5} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Wellness Consultation</p>
@@ -112,7 +112,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--6 zoom-mode">
-          <img src={serviceImage6} />
+          <img src={serviceImage6} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Harmony Reflexology</p>
@@ -126,7 +126,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--7 zoom-mode">
-          <img src={serviceImage7} />
+          <img src={serviceImage7} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Radiant Rose Facial</p>
@@ -140,7 +140,7 @@ function SectionTwo() {
       </div>
       <div className="service-cards">
         <div className="service-card service-card--8 zoom-mode">
-          <img src={serviceImage8} />
+          <img src={serviceImage8} alt="service photos" />
         </div>
         <div className="card-text-box">
           <p className="card-top-text">Tranquil Bliss Massage</p>

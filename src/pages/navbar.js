@@ -3,7 +3,7 @@ function Navbar() {
   return (
     <header className="nav-bar--container">
       <Link to="/" className="home-title">
-        <h1>Fitness and Gym</h1>
+        Fitness and Gym
       </Link>
 
       <nav className="nav-bar">
