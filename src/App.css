@@ -104,15 +104,13 @@ body {
 .nav-bar li {
   list-style: none;
 }
-
+/* 
 .carousel-box {
-  /* background-color: var(--primary); */
   height: 90vh;
   clip-path: ellipse(80% 60% at 50% 40%);
   transform: rotateY(180deg);
   width: 100%;
   margin: 0;
-  /* margin-top: 10rem; */
 }
 
 .slide {
@@ -127,7 +125,6 @@ body {
   color: white;
 }
 
-/* arrows */
 
 .slider__btn {
   color: green;
@@ -136,11 +133,9 @@ body {
   width: 5rem;
   font-size: 3rem;
   cursor: pointer;
-  /* background-color: rgba(202, 199, 199, 0.226); */
   padding: 1rem;
   border: none;
-  /* transition: all 2s; */
-}
+} */
 
 .btn-box {
   display: flex;
@@ -240,7 +235,7 @@ body {
   text-align: center;
   margin: auto;
   justify-content: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   /* padding: 2em; */
 }
 
@@ -287,7 +282,7 @@ body {
   width: 100%;
   text-align: center;
   margin: auto;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 /* Section Three */

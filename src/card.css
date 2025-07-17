@@ -26,13 +26,11 @@
 }
 
 .cards {
-  /* width: 95%; */
   height: 100%;
   margin: auto;
   position: relative;
   transform-style: preserve-3d;
   background-color: var(--secondary);
-
   transition: transform 0.8s;
   box-shadow: 0 0.1rem 0.5rem rgba(75, 11, 75, 0.144);
 }
