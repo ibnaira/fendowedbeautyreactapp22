@@ -1,3 +1,16 @@
+:root {
+  --primary: #6b5b95; /* Purple accent */
+  --primary-light: #6b5b9573; /* Purple accent */
+  --background: #ffffff;
+  --text: #333333;
+  --soft-green: #d0eae4;
+  --lavender: #e6e6fa;
+  --light--lavender: #e6e6fa25;
+  --light-gray: #f2f2f2;
+  --accent-peach: #ff6f61;
+  --secondary-light: rgba(219, 178, 180, 0.185); /* Pink accent */
+  --secondary: rgba(219, 178, 180, 0.733); /* Pink accent */
+}
 html,
 body {
   margin: 0;
@@ -16,7 +29,6 @@ body {
 
 .main {
   width: 100%;
-  /* background-color: yellow; */
   padding: none;
   height: 90vh;
 }
@@ -24,12 +36,9 @@ body {
 .carousel-container {
   width: 100%;
   height: 100%;
-  /* max-width: 1200px; */
   margin: 0 auto;
-  /* padding: 20px; */
   position: relative;
   clip-path: ellipse(80% 60% at 50% 40%);
-  /* background-color: purple; */
 }
 
 /* Customize Swiper navigation buttons */
@@ -39,22 +48,23 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 3rem;
   border-radius: 50%;
+  opacity: 0.2;
   transform: translateY(-90%);
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.884);
 }
 
 /* Customize Swiper pagination dots */
 .swiper-pagination-bullet {
-  background-color: #ccc;
+  background-color: var(--primary);
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #007bff;
+  background-color: var(--primary);
 }
 
 /* Texts in carousel */
@@ -73,11 +83,12 @@ body {
   height: 100%;
   overflow: hidden;
 }
-/* .slide-content > img {
-  height: 100%;
+.slide-content > img {
+  /* height: 100%;
   width: 100%;
-  object-fit: cover;
-} */
+  object-fit: cover; */
+  opacity: 0.89;
+}
 .carousel-image {
   width: 100%;
   height: 100%;
@@ -87,19 +98,32 @@ body {
 /* Text overlay */
 .slide-text {
   position: absolute;
-  bottom: 80%;
-  left: 30px;
+  bottom: 60%;
+  left: 20%;
   color: white;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: none;
   max-width: 70%;
-  background: rgba(0, 0, 0, 0.3); /* optional: semi-transparent background */
+  box-shadow: 1px 0.2px 2px var(--text);
   padding: 10px 20px;
   border-radius: 8px;
   z-index: 1000;
+  transform: translateY(0.2rem);
+  text-align: center;
+}
+.slide-text-title {
+  margin: auto;
+  position: relative;
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.slide-text ::after {
+  content: "''";
+  /* font-size: clamp(1.2rem, 1vw + 1.5rem, 2rem); */
 }
 
 /* Responsive text */
-/* @media (max-width: 768px) {
+@media (max-width: 460px) {
   .slide-text {
     bottom: 15px;
     left: 15px;
@@ -107,4 +131,34 @@ body {
     font-size: 14px;
     padding: 8px 12px;
   }
-} */
+  .slide-text-title {
+    font-size: 0.875rem;
+  }
+  .slide-text {
+    position: absolute;
+    bottom: 60%;
+    left: 20%;
+    color: white;
+    text-shadow: none;
+    max-width: 70%;
+    /* background: rgba(255, 160, 160, 0.068);  */
+    /* optional: semi-transparent background */
+    box-shadow: 1px 0.2px 2px var(--text);
+
+    padding: 10px 20px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #ffffff;
+    background-color: rgba(66, 63, 63, 0.4);
+    padding: 3rem;
+    border-radius: 50%;
+    transform: translateY(3rem);
+    opacity: 0.4;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}

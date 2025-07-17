@@ -33,7 +33,7 @@ function MainCarousel() {
           slidesPerView={1}
           navigation
           pagination={{ clickable: true }}
-          autoplay={{ delay: 300000 }}
+          autoplay={{ delay: 3000 }}
           loop
         >
           {slides.map(({ src, title, description }, index) => (
@@ -41,8 +41,8 @@ function MainCarousel() {
               <div className="slide-content">
                 <img src={src} alt={title} className="carousel-image" />
                 <div className="slide-text">
-                  <h2>{title}</h2>
-                  <p>{description}</p>
+                  <h2 className="slide-text-title">{title}</h2>
+                  <p className="slide-text-title">{description}</p>
                 </div>
               </div>
             </SwiperSlide>

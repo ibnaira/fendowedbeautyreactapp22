@@ -400,7 +400,6 @@ body {
 }
 
 .footer-mini-box {
-  /* height: 15rem; */
   width: 90%;
   display: flex;
   justify-content: center;
@@ -410,10 +409,12 @@ body {
   border-bottom: 2px solid var(--lavender);
 }
 
-.box-1 {
+.box----1 {
   font-size: 1.3em;
   margin: auto;
-  /* padding: 1rem; */
+}
+.box-2--flex {
+  display: flex;
 }
 .box {
   text-align: center;

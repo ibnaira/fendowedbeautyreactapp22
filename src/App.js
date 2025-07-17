@@ -289,56 +289,56 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-mini-box">
-        <div className="box-1">
+        <div className="box----1">
           <p>
-            <span> EndowedBeauty spa </span> <br />
-            <br />
-            F-endowedbeauty aesthetic, Spa and Gym <br />
-            We offer a 360-degree approach to wellness with a touch of luxury.
+            F-endowedbeauty aesthetic, Spa and Gym We offer a 360-degree
+            approach to wellness with a touch of luxury.
           </p>
         </div>
 
-        <div className="box box-2">
-          <ul>
-            <li className="footer-top-txt">Therapies</li>
-            <li>
-              <a href="">Treatments</a>
-            </li>
-            <li>
-              <a href="">Sauna rooms</a>
-            </li>
-            <li>
-              <a href="">Packages</a>
-            </li>
-          </ul>
-        </div>
-        <div className="box box-3">
-          <ul>
-            <li className="footer-top-txt">About</li>
-            <li>
-              <a href="">Our Spa</a>
-            </li>
-            <li>
-              <a href="">Pricing</a>
-            </li>
-            <li>
-              <a href="">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-        <div className="box box-4">
-          <ul>
-            <li className="footer-top-txt">Experience</li>
-            <li>
-              <a href="">Membership</a>
-            </li>
-            <li>
-              <a href="">Services</a>
-            </li>
-            <li>
-              <a href="">Treatments</a>
-            </li>
-          </ul>
+        <div className="box-2--flex">
+          <div className="box box-2">
+            <ul>
+              <li className="footer-top-txt">Therapies</li>
+              <li>
+                <a href="">Treatments</a>
+              </li>
+              <li>
+                <a href="">Sauna rooms</a>
+              </li>
+              <li>
+                <a href="">Packages</a>
+              </li>
+            </ul>
+          </div>
+          <div className="box box-3">
+            <ul>
+              <li className="footer-top-txt">About</li>
+              <li>
+                <a href="">Our Spa</a>
+              </li>
+              <li>
+                <a href="">Pricing</a>
+              </li>
+              <li>
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div className="box box-4">
+            <ul>
+              <li className="footer-top-txt">Experience</li>
+              <li>
+                <a href="">Membership</a>
+              </li>
+              <li>
+                <a href="">Services</a>
+              </li>
+              <li>
+                <a href="">Treatments</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       {/* {<!-- Social Media Icons -->} */}
