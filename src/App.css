@@ -289,9 +289,10 @@ body {
 .section-3 {
   background-color: var(--secondary);
   height: max-content;
-  width: 100%;
+  /* width: 100%; */
   z-index: 1000;
-  padding: 5rem;
+  box-sizing: content-box;
+  /* padding: 5rem; */
 }
 
 .section-3-img--box {

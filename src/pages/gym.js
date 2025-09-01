@@ -21,7 +21,7 @@ function GymMainSection() {
       {/* <!-- <img src="images/gym-images/classes-top-image.png" alt="" /> --> */}
       <div className="gym-section--1">
         <h2 class="main-text">Transform your life with Fitness</h2>
-        <p className="small-text">
+        <p className="gym-small-text">
           Join us to achieve your fitness goals with our state-of-the-art
           facilities, expert trainers, and a supportive community.
         </p>
@@ -95,60 +95,70 @@ function GymSectionThree() {
   return (
     <section class="gym-section--3">
       <div class="gym-part---1">
-        <h2>What sets us apart?</h2>
-        <p>
+        <h2 className="heading--1">
+          <strong>What sets us apart?</strong>
+        </h2>
+        <p className="heading--2">
           We are a community dedicated to helping you achieve your fitness goals
           in a supportive, welcoming environment.
         </p>
         <div class="gym-features-box">
-          <p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000000"
-            >
-              <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
-            </svg>
-            Innovative facilities
-          </p>
-          <p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000000"
-            >
-              <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
-            </svg>
-            Community focus
-          </p>
-          <p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000000"
-            >
-              <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
-            </svg>
-            Expert team
-          </p>
-          <p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="#000000"
-            >
-              <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
-            </svg>
-            Diverse offerings
-          </p>
+          <div className="gym-features">
+            <p className="mark-sign">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#fff"
+              >
+                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+              </svg>
+            </p>
+            <p>Innovative facilities</p>
+          </div>
+          <div className="gym-features">
+            <p className="mark-sign">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#fff"
+              >
+                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+              </svg>
+            </p>
+            <p>Community focus</p>
+          </div>
+          <div className="gym-features">
+            <p className="mark-sign">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#fff"
+              >
+                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+              </svg>
+            </p>
+            <p>Expert team</p>
+          </div>
+          <div className="gym-features">
+            <p className="mark-sign">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#fff"
+              >
+                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+              </svg>
+            </p>
+            <p>Diverse offerings</p>
+          </div>
         </div>
 
         <button class="gym-btn-get-to-know-us">Get To Know Us</button>

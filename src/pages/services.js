@@ -48,11 +48,12 @@ function SectionTwo() {
             Exquisite range of spa services designed to pamper you from head to
             toe.
           </p>
-
-          <button className="btn-read-more">Read More &rarr;</button>
+          <Link to="/hairstyle">
+            <button className="btn-read-more">Read More &rarr;</button>
+          </Link>
         </div>
       </div>
-      <div className="service-cards">
+      {/* <div className="service-cards">
         <div className="service-card service-card--2 zoom-mode">
           <img src={serviceImage2} alt="service photos" />
         </div>
@@ -65,8 +66,8 @@ function SectionTwo() {
 
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
-      </div>
-      <div className="service-cards">
+      </div> */}
+      {/* <div className="service-cards">
         <div className="service-card service-card--3 zoom-mode">
           <img src={serviceImage3} alt="service photos" />
         </div>
@@ -79,8 +80,8 @@ function SectionTwo() {
 
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
-      </div>
-      <div className="service-cards">
+      </div> */}
+      {/* <div className="service-cards">
         <div className="service-card service-card--4 zoom-mode">
           <img src={serviceImage4} alt="service photos" />
         </div>
@@ -93,7 +94,7 @@ function SectionTwo() {
 
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
-      </div>
+      </div> */}
       <div className="service-cards">
         <div className="service-card service-card--5 zoom-mode">
           <img src={serviceImage5} alt="service photos" />
@@ -110,7 +111,7 @@ function SectionTwo() {
           </Link>
         </div>
       </div>
-      <div className="service-cards">
+      {/* <div className="service-cards">
         <div className="service-card service-card--6 zoom-mode">
           <img src={serviceImage6} alt="service photos" />
         </div>
@@ -123,8 +124,8 @@ function SectionTwo() {
 
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
-      </div>
-      <div className="service-cards">
+      </div> */}
+      {/* <div className="service-cards">
         <div className="service-card service-card--7 zoom-mode">
           <img src={serviceImage7} alt="service photos" />
         </div>
@@ -137,8 +138,8 @@ function SectionTwo() {
 
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
-      </div>
-      <div className="service-cards">
+      </div> */}
+      {/* <div className="service-cards">
         <div className="service-card service-card--8 zoom-mode">
           <img src={serviceImage8} alt="service photos" />
         </div>
@@ -151,7 +152,7 @@ function SectionTwo() {
 
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

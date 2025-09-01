@@ -6,7 +6,6 @@ import "./buttons.css";
 import "./home-mediaqueries.css";
 import "./texts.css";
 
-import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Services from "./pages/services.js";
 import Navbar from "./pages/navbar.js";
@@ -19,6 +18,7 @@ import pattern1 from "./images/pattern1.svg";
 import pattern2 from "./images/pattern2.svg";
 import GymPage from "./pages/gym.js";
 import MainCarousel from "./carousel.js";
+import Hairstyle from "./pages/hairstyle.js";
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
           <Route path="/booking" element={<Booking />}></Route>
           <Route path="*" element={<Nopage />}></Route>
           <Route path="/gym" element={<GymPage />}></Route>
+          <Route path="/hairstyle" element={<Hairstyle />}></Route>
         </Routes>
       </BrowserRouter>
       {/* <MainApp />; */}
@@ -104,8 +105,8 @@ function WhatWeDoSection() {
             Our spa is a sanctuary where <br />
             relaxation meets rejuvenation.
           </span>
-          <br />
-          <br />
+          {/* <br />
+          <br /> */}
           <span className="box--1-text-1">
             Unwind with our exquisite range of spa services designed to pamper
             you from head to toe. From soothing massages and rejuvenating
