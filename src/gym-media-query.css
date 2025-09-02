@@ -12,6 +12,8 @@
   .gym-main-section-1 {
     width: 100%;
     border-radius: 0;
+    background-size: 150% 120%;
+    background-position: center;
   }
 
   .gym-part--2-img p {
@@ -55,25 +57,24 @@
     word-spacing: 3.7px;
   }
   .mark-sign {
-    height: 1.9rem;
-    width: 1.9rem;
-    background-color: var();
+    height: 2rem;
+    width: 2rem;
+    padding: 0.1rem;
   }
 
-  .mark-sign > svg {
-    display: flex;
-    justify-self: center;
-    padding: 0.2em;
-  }
   .gym-section--3 {
     flex-direction: column;
   }
   .gym-part---1 {
-    padding: 1rem;
-    width: 100%;
+    padding: 0.5rem;
   }
 
   .heading--1 {
-    line-height: 1;
+    /* line-height: 1.7; */
+    font-size: calc(100% + 1.5rem);
+  }
+  .heading--2 {
+    font-size: calc(100% + 0.2rem);
+    line-height: 1.5;
   }
 }

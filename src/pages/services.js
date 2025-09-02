@@ -14,12 +14,42 @@ import serviceImage5 from "../images/woman-training-weightlifting-gym.png";
 import serviceImage6 from "../images/woman-cleansing-face.webp";
 import serviceImage7 from "../images/handsome-black-man-is-engaged-gym.png";
 import serviceImage8 from "../images/man-woman-doing-beauty-treatment-home.png";
-
+import backImg from "../images/spa-worker.png";
+import HeroeComponent from "../Components/HeroeComponent";
+const serviceCardInfo = [
+  {
+    topText: "Endowed Beauty Cutz",
+    smallText:
+      " Exquisite range of spa services designed to pamper you from head to toe.",
+    backImg: serviceImage1,
+    url: "hairstyle",
+  },
+  {
+    topText: "Endowed Beauty Gym",
+    smallText:
+      " Exquisite range of spa services designed to pamper you from head to toe.",
+    backImg: serviceImage5,
+    url: "gym",
+  },
+  {
+    topText: "Endowed Beauty Spa",
+    smallText:
+      " Exquisite range of spa services designed to pamper you from head to toe.",
+    backImg: serviceImage6,
+    url: "spa",
+  },
+];
 function Services() {
   return (
     <>
-      <Navbar />
-      <ServiceHeader />
+      <HeroeComponent
+        backImg={backImg}
+        mainText={"Fendowed Beauty SPA"}
+        smallText={
+          "We believe that true beauty comes from within Unwind with our exquisite range of spa services designed to pamper you from head to toe. From soothing massages and rejuvenating facials to luxurious body treatments, our skilled therapists are dedicated to creating a personalized experience tailored to your unique needs."
+        }
+      />
+      {/* <ServiceHeader /> */}
       <SectionTwo />
       <SectionThree />
       <Footer />
@@ -30,7 +60,7 @@ function Services() {
 function ServiceHeader() {
   return (
     <section id="section-one">
-      <div className="img-box"></div>
+      <div className="section-one-img-box"></div>
     </section>
   );
 }
@@ -38,7 +68,10 @@ function ServiceHeader() {
 function SectionTwo() {
   return (
     <section id="service-cards-box">
-      <div className="service-cards">
+      {serviceCardInfo.map(info => (
+        <ServiceCards info={info} key={info.topText} />
+      ))}
+      {/* <div className="service-cards">
         <div className="service-card service-card--1 zoom-mode">
           <img src={serviceImage1} alt="service photos" />
         </div>
@@ -53,6 +86,37 @@ function SectionTwo() {
           </Link>
         </div>
       </div>
+      <div className="service-cards">
+        <div className="service-card service-card--5 zoom-mode">
+          <img src={serviceImage5} alt="service photos" />
+        </div>
+        <div className="card-text-box">
+          <p className="card-top-text">Wellness Consultation</p>
+          <p className="small-text">
+            Exquisite range of spa services designed to pamper you from head to
+            toe.
+          </p>
+
+          <Link to="/gym">
+            <button className="btn-read-more">Read More &rarr;</button>
+          </Link>
+        </div>
+      </div>
+      <div className="service-cards">
+        <div className="service-card service-card--6 zoom-mode">
+          <img src={serviceImage6} alt="service photos" />
+        </div>
+        <div className="card-text-box">
+          <p className="card-top-text">Harmony Reflexology</p>
+          <p className="small-text">
+            Exquisite range of spa services designed to pamper you from head to
+            toe.
+          </p>
+          <Link to="/spa">
+            <button className="btn-read-more">Read More &rarr;</button>
+          </Link>
+        </div>
+      </div> */}
       {/* <div className="service-cards">
         <div className="service-card service-card--2 zoom-mode">
           <img src={serviceImage2} alt="service photos" />
@@ -95,36 +159,6 @@ function SectionTwo() {
           <button className="btn-read-more">Read More &rarr;</button>
         </div>
       </div> */}
-      <div className="service-cards">
-        <div className="service-card service-card--5 zoom-mode">
-          <img src={serviceImage5} alt="service photos" />
-        </div>
-        <div className="card-text-box">
-          <p className="card-top-text">Wellness Consultation</p>
-          <p className="small-text">
-            Exquisite range of spa services designed to pamper you from head to
-            toe.
-          </p>
-
-          <Link to="/gym">
-            <button className="btn-read-more">Read More &rarr;</button>
-          </Link>
-        </div>
-      </div>
-      {/* <div className="service-cards">
-        <div className="service-card service-card--6 zoom-mode">
-          <img src={serviceImage6} alt="service photos" />
-        </div>
-        <div className="card-text-box">
-          <p className="card-top-text">Harmony Reflexology</p>
-          <p className="small-text">
-            Exquisite range of spa services designed to pamper you from head to
-            toe.
-          </p>
-
-          <button className="btn-read-more">Read More &rarr;</button>
-        </div>
-      </div> */}
       {/* <div className="service-cards">
         <div className="service-card service-card--7 zoom-mode">
           <img src={serviceImage7} alt="service photos" />
@@ -156,7 +190,25 @@ function SectionTwo() {
     </section>
   );
 }
-
+function ServiceCards({ info }) {
+  return (
+    <div
+      style={{ backgroundImage: `url(${info.backImg})` }}
+      className="service-cards"
+    >
+      {/* <div className="service-card service-card--1 zoom-mode">
+        <img src={serviceImage1} alt="service photos" />
+      </div> */}
+      <div className="card-text-box">
+        <p className="card-top-text">{info.topText}</p>
+        <p className="small-text">{info.smallText}</p>
+        <Link to={`/${info.url}`}>
+          <button className="btn-read-more">Read More &rarr;</button>
+        </Link>
+      </div>
+    </div>
+  );
+}
 function SectionThree() {
   <section className="section-2">
     <div className="testimonial-main-box">

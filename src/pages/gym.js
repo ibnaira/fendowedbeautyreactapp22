@@ -1,11 +1,48 @@
 import "../gym.css";
 import "../gym-media-query.css";
+import "../carousel.css";
 import Navbar from "./navbar";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Keyboard } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import backImg from "../images/gym-images/gym-img-2.png";
+import HeroeComponent from "../Components/HeroeComponent";
+const slideInfo = [
+  {
+    testimonialHeader: "Best financial decision ever!",
+    testimonialText:
+      "My confidence has soared, and I feel stronger every day. Her commitment to my success has made all the difference.",
+    name: "Aarav Lynn",
+    location: "San Francisco, USA",
+  },
+  {
+    testimonialHeader: "The last step to becoming a complete minimalist",
+    testimonialText:
+      " I feel stronger and more confident, and I appreciate her dedication to helping me achieve my fitness goals.",
+    name: "Miyah Miles",
+    location: "London, UK",
+  },
+  {
+    testimonialHeader: " Finally free from old-school banks",
+    testimonialText:
+      " Thanks to her guidance, I've achieved goals I never thought possible. I'm more confident and fit than ever!",
+    name: "Francisco Gomez",
+    location: "Lisbon, Portugal",
+  },
+];
+
 function GymPage() {
   return (
     <>
-      <Navbar />
-      <GymMainSection />
+      <HeroeComponent
+        backImg={backImg}
+        mainText={"Transform your life with Fitness"}
+        smallText={
+          "Join us to achieve your fitness goals with our state-of-the-art facilities, expert trainers, and a supportive community."
+        }
+      />
       <GymSectionTwo />
       <GymSectionThree />
       <GymSlider />
@@ -15,21 +52,22 @@ function GymPage() {
   );
 }
 
-function GymMainSection() {
-  return (
-    <div className="gym-main-section-1">
-      {/* <!-- <img src="images/gym-images/classes-top-image.png" alt="" /> --> */}
-      <div className="gym-section--1">
-        <h2 class="main-text">Transform your life with Fitness</h2>
-        <p className="gym-small-text">
-          Join us to achieve your fitness goals with our state-of-the-art
-          facilities, expert trainers, and a supportive community.
-        </p>
-        <button className="gym-btn-join-now">Join Now</button>
-      </div>
-    </div>
-  );
-}
+// function GymMainSection() {
+//   return (
+//     <div className="gym-main-section-1">
+//       <Navbar />
+//       {/* <!-- <img src="images/gym-images/classes-top-image.png" alt="" /> --> */}
+//       <div className="gym-section--1">
+//         <h2 class="main-text">Transform your life with Fitness</h2>
+//         <p className="gym-small-text">
+//           Join us to achieve your fitness goals with our state-of-the-art
+//           facilities, expert trainers, and a supportive community.
+//         </p>
+//         <button className="btn-hover gym-btn-join-now">Join Now</button>
+//       </div>
+//     </div>
+//   );
+// }
 
 function GymSectionTwo() {
   return (
@@ -37,7 +75,9 @@ function GymSectionTwo() {
       <div className="gym-part--1">
         <p className="big-text-2">Our Classes</p>
         <a href="classes.html">
-          <button className="gym-btn-more-class">View All Classes</button>
+          <button className="btn-hover gym-btn-more-class">
+            View All Classes
+          </button>
         </a>
       </div>
 
@@ -161,7 +201,7 @@ function GymSectionThree() {
           </div>
         </div>
 
-        <button class="gym-btn-get-to-know-us">Get To Know Us</button>
+        <button class="gym-btn-get-to-know-us btn-hover">Get To Know Us</button>
       </div>
 
       <div class="gym-part---2"></div>
@@ -172,70 +212,43 @@ function GymSectionThree() {
 function GymSlider() {
   return (
     <div class="slider">
-      <div class="slide">
-        <div class="testimonial">
-          <div class="testimonial-txt-box">
-            <h5 class="testimonial__header">Best financial decision ever!</h5>
-            <blockquote class="testimonial__text">
-              My confidence has soared, and I feel stronger every day. Her
-              commitment to my success has made all the difference.
-            </blockquote>
-          </div>
-        </div>
-        <div class="testimonial-photo">
-          <address class="testimonial__author">
-            {/* <!-- <img
-              src="images/gym-images/gym-img-1.png"
-              alt=""
-              class="testimonial__photo"
-            /> --> */}
-            <h6 class="testimonial__name">Aarav Lynn</h6>
-            <p class="testimonial__location">San Francisco, USA</p>
-          </address>
-        </div>
-      </div>
+      {/* //Swiper */}
+
+      <Swiper
+        modules={[Pagination, Autoplay, Keyboard]}
+        spaceBetween={60}
+        slidesPerView={1.3}
+        navigation
+        pagination={{ clickable: true }}
+        keyboard={{ enabled: true }} // 👈 Enable keyboard
+        autoplay={{ delay: 3000 }}
+        loop
+      >
+        {slideInfo.map(
+          ({ testimonialHeader, testimonialText, name, location }) => (
+            <SwiperSlide key={name}>
+              <div class="slide">
+                <div class="testimonial">
+                  <div class="testimonial-txt-box">
+                    <h5 class="testimonial__header">{testimonialHeader}</h5>
+                    <blockquote class="testimonial__text">
+                      {testimonialText}
+                    </blockquote>
+                  </div>
+                </div>
+                <div className="testimonial-photo">
+                  <address class="testimonial__author">
+                    <h6 class="testimonial__name">{name}</h6>
+                    <p class="testimonial__location">{location}</p>
+                  </address>
+                </div>
+              </div>
+            </SwiperSlide>
+          )
+        )}
+      </Swiper>
 
       {/* <!-- SLIDE --> */}
-
-      <div class="slide">
-        <div class="testimonial">
-          <div class="testimonial-txt-box">
-            <h5 class="testimonial__header">
-              The last step to becoming a complete minimalist
-            </h5>
-            <blockquote class="testimonial__text">
-              I feel stronger and more confident, and I appreciate her
-              dedication to helping me achieve my fitness goals.
-            </blockquote>
-          </div>
-        </div>
-        <div class="testimonial-photo">
-          <address class="testimonial__author">
-            <h6 class="testimonial__name">Miyah Miles</h6>
-            <p class="testimonial__location">London, UK</p>
-          </address>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="testimonial">
-          <div class="testimonial-txt-box">
-            <h5 class="testimonial__header">
-              Finally free from old-school banks
-            </h5>
-            <blockquote class="testimonial__text">
-              Thanks to her guidance, I've achieved goals I never thought
-              possible. I'm more confident and fit than ever!
-            </blockquote>
-          </div>
-        </div>
-        <div className="testimonial-photo">
-          <address class="testimonial__author">
-            <h6 class="testimonial__name">Francisco Gomes</h6>
-            <p class="testimonial__location">Lisbon, Portugal</p>
-          </address>
-        </div>
-      </div>
 
       <button class="slider__btn slider__btn--left">&larr;</button>
       <button class="slider__btn slider__btn--right">&rarr;</button>

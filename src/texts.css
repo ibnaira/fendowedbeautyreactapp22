@@ -168,19 +168,6 @@
   color: var(--text);
 }
 
-.box--3-text-box {
-  text-align: left;
-  margin: auto;
-  width: 30rem;
-  /* height: 50%; */
-}
-
-.box--3-text {
-  line-height: 40px;
-  font-weight: normal;
-  font-family: "MyCustomFont3";
-}
-
 .section-3-box-3-text {
   width: 30rem;
   margin: auto;
@@ -260,12 +247,14 @@
     width: 100%;
     margin: auto;
   }
+  .box--3-text {
+    font-family: "MyCustomFont1";
+    line-height: 1.2;
+  }
 
   .box--3-text-box {
     text-align: center;
     margin: auto;
-    width: 70%;
-    padding: 0.3rem;
     line-height: 0;
     max-height: max-content;
   }

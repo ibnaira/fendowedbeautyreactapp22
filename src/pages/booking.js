@@ -2,12 +2,18 @@ import Navbar from "./navbar";
 import "../services.css";
 import "../booking.css";
 import { Footer } from "../App";
+import HeroeComponent from "../Components/HeroeComponent";
 
 function Booking() {
   return (
     <>
-      <Navbar />
-      <BookingSectionOne />
+      {/* <Navbar /> */}
+      <HeroeComponent
+        mainText="Book A Session with Us And never Regret Your Action"
+        smallText="Join us to achieve your fitness goals with our state-of-the-art
+          facilities, expert trainers, and a supportive community, healthy and Beautiful Skin Assured Too With Our Top-notch Spa Services."
+      />
+      {/* <BookingSectionOne /> */}
       <BookingSectionTwo />
       <BookingLogoBox />
       <Footer />

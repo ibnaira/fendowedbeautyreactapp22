@@ -70,10 +70,9 @@
 }
 
 .materials-img {
-  max-height: 40rem;
-  width: 50%;
+  height: 40%;
   background-image: url(images/beauty-materials.png);
-  background-size: 100% auto;
+  background-size: 100% 120%;
   background-position: center;
   background-repeat: no-repeat;
   /* clip-path: ellipse(66% 56% at 71% 50%); */

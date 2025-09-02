@@ -6,7 +6,7 @@ import "./buttons.css";
 import "./home-mediaqueries.css";
 import "./texts.css";
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Services from "./pages/services.js";
 import Navbar from "./pages/navbar.js";
 import Dashboard from "./pages/dashboard.js";
@@ -19,6 +19,7 @@ import pattern2 from "./images/pattern2.svg";
 import GymPage from "./pages/gym.js";
 import MainCarousel from "./carousel.js";
 import Hairstyle from "./pages/hairstyle.js";
+import SpaPage from "./pages/SpaPage.js";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="*" element={<Nopage />}></Route>
           <Route path="/gym" element={<GymPage />}></Route>
           <Route path="/hairstyle" element={<Hairstyle />}></Route>
+          <Route path="/spa" element={<SpaPage />}></Route>
         </Routes>
       </BrowserRouter>
       {/* <MainApp />; */}
@@ -127,7 +129,8 @@ function WhatWeDoSection() {
         <div className="box--3">
           <div className="box--3-mini"></div>
           <div className="box--3-text-box">
-            <h3 className="box--3-text">
+            <p className="title">Spa Services</p>
+            <p className="box--3-text">
               <span>
                 Here you can unwind and escape the stresses of daily life.
               </span>
@@ -136,8 +139,10 @@ function WhatWeDoSection() {
               facials to luxurious body treatments, our skilled therapists are
               dedicated to creating a personalized experience tailored to your
               unique needs.
-            </h3>
-            <button className="btn btn-learn-more">Learn More &rarr;</button>
+            </p>
+            <Link to="/spa">
+              <button className="btn btn-learn-more">Learn More &rarr;</button>
+            </Link>
           </div>
         </div>
       </section>
@@ -149,16 +154,19 @@ function WhatWeDoSection() {
 
           <div className="services-txt-box">
             <p className="title">Our Services</p>
-
-            <h3 className="box--3-text">
-              We believe that true beauty comes from within <br />
-              Unwind with our exquisite range of spa services designed to pamper
-              you from head to toe. From soothing massages and rejuvenating
-              facials to luxurious body treatments, our skilled therapists are
-              dedicated to creating a personalized experience tailored to your
-              unique needs.
-              <button className="btn btn-show-details">Show Details</button>
-            </h3>
+            <div className="box--3-text-box">
+              <p className="box--3-text">
+                We believe that true beauty comes from within <br />
+                Unwind with our exquisite range of spa services designed to
+                pamper you from head to toe. From soothing massages and
+                rejuvenating facials to luxurious body treatments, our skilled
+                therapists are dedicated to creating a personalized experience
+                tailored to your unique needs.
+              </p>
+              <Link to="/services">
+                <button className="btn btn-show-details">Show Details</button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -203,7 +211,9 @@ function Card({ cardObj }) {
             Only <br />
             <span className="big-text">{cardObj.price}</span>
           </p>
-          <button className="btn-book-now">Book Now</button>
+          <Link to="/booking">
+            <button className="btn-book-now">Book Now</button>
+          </Link>
         </div>
       </div>
     </div>

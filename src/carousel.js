@@ -1,4 +1,3 @@
-import React from "react";
 import "./main-carousel.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import img1 from "./images/spa-composition-with-body-care-items-light.png";
-import img2 from "./images/spa-composition-with-body-care-items-light.png";
+import img2 from "./images/attractive-african-woman-enjoying-face-massage-spa-salon.png";
 
 const slides = [
   {
@@ -25,31 +24,36 @@ const slides = [
 ];
 function MainCarousel() {
   return (
-    <div className="main">
-      <div className="carousel-container">
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 3000 }}
-          loop
-        >
-          {slides.map(({ src, title, description }, index) => (
-            <SwiperSlide key={index}>
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      spaceBetween={30}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 3000 }}
+      loop
+    >
+      {slides.map(({ src, title, description }, index) => (
+        <SwiperSlide key={index}>
+          <div
+            style={{
+              backgroundImage: `url(${src})`,
+              backgroundSize: "100% 100%",
+            }}
+            className="main"
+          >
+            <div className="carousel-container">
               <div className="slide-content">
-                <img src={src} alt={title} className="carousel-image" />
                 <div className="slide-text">
                   <h2 className="slide-text-title">{title}</h2>
-                  <p className="slide-text-title">{description}</p>
+                  <p className="small-slide-text-title">{description}</p>
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </div>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
 

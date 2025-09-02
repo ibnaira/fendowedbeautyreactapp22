@@ -3,10 +3,12 @@ import "../hairstyle.css";
 import { Footer } from "../App";
 import { Swiper, SwiperSlide } from "swiper/react";
 import avatar1 from "../images/avatar1.png";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import backImg from "../images/barbing-chairs.png";
+import HeroeComponent from "../Components/HeroeComponent";
 
 const slides = [
   {
@@ -40,8 +42,17 @@ const slides = [
 export default function Hairstyle() {
   return (
     <div>
-      <Navbar />
-      <SectionOne />
+      {/* <SectionOne /> */}
+      <HeroeComponent
+        backImg={backImg}
+        mainText={"Welcome to Fendowed Beauty Cutz"}
+        smallText={
+          " ...or as we like to call it, the best damn part of your day."
+        }
+        addText={
+          " *Unless you won the lottery or something. Then we're probably a closesecond."
+        }
+      />
       <SectionTwo />
       <SaloonCarousel />
       <Footer />
@@ -52,6 +63,7 @@ export default function Hairstyle() {
 function SectionOne() {
   return (
     <div className="section-1">
+      <Navbar />
       <div className="top-most-img-txt">
         <h2 className="head-txt">Welcome to Fendowed Beauty Cutz</h2>
         <p className="small-txt">
@@ -117,11 +129,12 @@ function SaloonCarousel() {
       </div>
       <div className="slide-box">
         <Swiper
-          modules={[Pagination, Autoplay]}
+          modules={[Pagination, Autoplay, Keyboard]}
           spaceBetween={60}
           slidesPerView={1.3}
           navigation
           pagination={{ clickable: true }}
+          keyboard={{ enabled: true }} // 👈 Enable keyboard
           autoplay={{ delay: 3000 }}
           loop
         >

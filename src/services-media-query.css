@@ -1,6 +1,8 @@
 @media (max-width: 460px) {
-  #section-one {
-    height: 30vh;
+  .section-one-img-box {
+    height: 100%;
+    width: 100%;
+    background-size: 200% 130%;
   }
   #service-cards-box {
     display: flex;
@@ -16,8 +18,8 @@
   .service-cards {
     padding: 0.1em;
 
-    width: 100%;
-    margin-block: 1rem;
+    width: 90%;
+    margin: 0 auto;
     /* display: block; */
   }
 

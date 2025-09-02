@@ -165,7 +165,6 @@ body {
 .our-services-box {
   width: 95vw;
   margin: auto;
-  padding: 2rem;
   box-shadow: 0 0.1rem 0.5rem rgba(75, 11, 75, 0.116);
 }
 .txt-img-container {
@@ -191,20 +190,14 @@ body {
 .box--2 {
   width: 50%;
   height: 100%;
-  /* padding: 1rem; */
-  /* display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 2rem; */
+
   box-shadow: 0.1rem 0px 0.1rem 0.1rem rgba(75, 11, 75, 0.116);
 }
 
 .box--3 {
   display: grid;
-  /* gap: 1rem; */
   width: 50%;
   height: 100%;
-  /* padding: 1rem; */
   box-shadow: 0 0.1rem 0.5rem rgba(75, 11, 75, 0.116);
 }
 
@@ -220,11 +213,10 @@ body {
 }
 
 .services-txt-box {
-  width: 50%;
-  height: 30rem;
+  /* width: 50%; */
+  /* height: 30rem; */
   margin: auto;
   text-align: left;
-  padding: 1rem;
   box-shadow: 0 0.1rem 0.5rem rgba(75, 11, 75, 0.116);
 }
 
@@ -270,12 +262,6 @@ body {
   height: 6rem;
   width: 6rem;
 }
-
-/* 
-.box--3 {
-  display: flex;
-  align-items: baseline;
-} */
 
 .massage-box {
   height: 60rem;
